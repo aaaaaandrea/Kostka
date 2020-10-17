@@ -1,4 +1,5 @@
-Kostka
+#Kostka
+
 Zákkladní grafické rozhraní
 Rámečky kolem obrázku, a zaoblené rohy pomocí bootstrapu
 Stínovaní kostek v CSS
