@@ -1,39 +1,66 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS -->
-    <link href="css/style.css" rel="stylesheet">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-        <h1 class="text-center box">Kostka</h1>
-        <div class="container">
-            <div class="row d-flex justify-content-between">
-                <img class="border border-dark rounded cube"  src="img/kostka1.png" alt="Kostka">
-                <img class="border border-dark rounded cube"  src="img/kostka2.png" alt="Kostka">
-                <img class="border border-dark rounded cube"  src="img/kostka3.png" alt="Kostka">
-                <img class="border border-dark rounded cube"  src="img/kostka4.png" alt="Kostka">
-                <img class="border border-dark rounded cube"  src="img/kostka5.png" alt="Kostka">
-                <img class="border border-dark rounded cube"  src="img/kostka6.png" alt="Kostka">
-            </div>
-            <br>
-            <div id="result">Výsledek</div>
-            <button id="game">Hraj</button>
-        </div>
+  <!-- CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 class="text-center box">Dice</h1>
+  <div class="container">
+    <div class="row d-flex justify-content-between">
+      <img class="border rounded cube" id="dice1" src="img/kostka1.png" alt="Kostka">
+      <img class="border rounded cube" id="dice2" src="img/kostka2.png" alt="Kostka">
+      <img class="border rounded cube" id="dice3" src="img/kostka3.png" alt="Kostka">
+      <img class="border rounded cube" id="dice4" src="img/kostka4.png" alt="Kostka">
+      <img class="border rounded cube" id="dice5" src="img/kostka5.png" alt="Kostka">
+      <img class="border rounded cube" id="dice6" src="img/kostka6.png" alt="Kostka">
+    </div>
+    <br>
+    <div id="result">Výsledek</div>
+    <div class="d-flex justify-content-between">
+      <div><button class="center" id="game">Hraj</button></div>
+      <div><button id="rules">?</button>
+      </div>
+    </div>
+    <div class="d-flex justify-content-around">
+      <div id="create1"></div>
+      <div id="create2"></div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-around">
+      <ul class="list-group col-4">
+        <li class="list-group-item active text-center">Score</li>
+        <li class="list-group-item d-flex justify-content-between">Selected  <div>0</div></li>
+        <li class="list-group-item d-flex justify-content-between">Round     <div>0</div></li>
+        <li class="list-group-item d-flex justify-content-between">Total     <div>0</div></li>
+      </ul>
+    </div>
+  </div>
 
 
-    <!-- Optional JavaScript -->
-    <script src="js/kostka02.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <script src="js/kostka02.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
